@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Top Center Toast with Delay and Close</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Hidden checkbox to control visibility */
+      #toast-toggle {
+        display: none;
+      }
+
+      .toast {
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 16px 24px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        animation: showAfterDelay 0s forwards;
+        animation-delay: 5s; /* Delay before showing */
+      }
+
+      /* Show the toast after delay */
+      @keyframes showAfterDelay {
+        to {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+
+      /* If user clicks close, hide it permanently */
+      #toast-toggle:checked ~ .toast {
+        display: none;
+      }
+
+      .toast .close-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        margin-left: 16px;
+        cursor: pointer;
+      }
+
+      .toast .close-btn:hover {
+        color: #ffd000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hidden checkbox to act as close toggle -->
+    <input type="checkbox" id="toast-toggle" />
+
+    <!-- Toast box -->
+    <div class="toast">
+      This toast appears after 5 seconds.
+      <!-- Clicking label checks checkbox (closes toast) -->
+      <label for="toast-toggle" class="close-btn">✖</label>
+    </div>
+  </body>
+</html>

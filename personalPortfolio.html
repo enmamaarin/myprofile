@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya SC"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+   <!-- navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">MyPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#top">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificate">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#techstack">Tech Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home -->
+
+     <div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <section id = "top"></section>
+      <section id="home" class="mb-4">
+        <h1 class="display-5 fw-bold text-white">Hi!</h1>
+        <p class="lead">Get to know who I am and what I’ve done.</p>
+      </section>
+
+      <section id="about">
+        <h2 class = "fade-bg" >About Me</h2>
+        <p>
+          Hello! My name is <strong>Lenard Peregil</strong>, but you can call me
+          Nard. I graduated from STI Pasay-EDSA and I’m currently a trainee at
+          SSCGI. My coding background might not be extensive yet, but I'm
+          confident in my ability to adapt and grow when guided. I'm looking
+          forward to learning, contributing, and growing alongside everyone.
+        </p>
+      </section>
+    </div>
+
+    <div class="col-lg-6 text-center">
+      <img id="previewimg" src="photo.png" alt="Gallery Image" class="img-fluid rounded shadow grad-img" />
+    </div>
+  </div>
+</div>
+
+    <!-- gallery -->
+    <section id="hobbies" class="section hobby-section ">
+      <div class="container">
+        <h2 id = "hobby">Hobbies</h2>
+        <h3 class = "fade-bg"> VIDEO GAMES</h3>
+        <div class="row games-gallery">
+          <div class="col-md-6 custom-left-content align-items-center">
+             <img src = "yunara.png" alt = "yunara league of legends champion">
+            <a href = "https://www.leagueoflegends.com/en-ph/" target="_blank">
+              <img id = "logo" src="lol-logo.png" alt="league of legends logo">
+            </a>
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "gogogo.jpg" alt = "valorant agents" />
+            <a href = "https://playvalorant.com/en-us/" target="_blank">
+              <img id = "logo"  src="valorantlogo.png" alt="Valorant logo" />
+            </a>
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "warframe.jpg" alt = "warframe splash art" />
+            <a href = "https://www.warframe.com/" target="_blank">
+              <img id = "logo"  src="Warframe-logo.webp" alt="warframe logo" />
+            </a>
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "apex.jpg" alt = "characters of apex legends" />
+            <a href = "https://www.ea.com/games/apex-legends/apex-legends" target="_blank">
+              <img id = "logo"  src="apexlogo.svg" alt="Apex legends logo" />
+            </a>
+          </div>
+        <h3 class = "fade-bg"> ARTWORKS </h3>
+        <div class="row grad-gallery">
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "viper.jpg" alt = "digital art of viper from valorant" />
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "yoru.jpg" alt = "digital art of yoru from valorant" />
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "laplus.jpg" alt = "digital art of laplus darkness from holoX" />
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "suzuka.jpg" alt = "digital art of suzuka from atarashii gakko" />
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "arsh.jpg" alt = "traditional art of a girl" />
+          </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgleft" src = "nez.jpg" alt = "traditional art of nezuko from demon slayer" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- certificates -->
+    <section id="certificate" class="section bg-green certificate-section">
+      <div class="container">
+        <h2 class = "fade-bg">My Certificates</h2>
+        <ul>
+          <li>
+            Completed 3 courses on Udemy related to web development and Git.
+          </li>
+        </ul>
+        <div class="row cert-gallery">
+          <div class="col-md-4">
+            <img
+              src="cmd.jpg"
+              alt="Certificate for command line essenstials: git bash for windows"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="html.jpg"
+              alt="Certificate for The complete guide to HTML"
+            />
+          </div>
+          <div class="col-md-4">
+            <img src="introtogit.jpg" alt="Certificate for Intro to git" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="section bg-green projects-section">
+      <div class="container">
+        <h2 class = "fade-bg">Projects</h2>
+        <p>Here are a few projects I developed during my college/shs years:</p>
+        <ul>
+          <li>An e-commerce web app for an online jewelry store.</li>
+          <li>
+            A 2D mobile game that revolves around completing household chores.
+          </li>
+        </ul>
+        <div class="row proj-gallery">
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgbb" src = "bahay-bahayan.jpg" alt = "logo of bahay-bahayan 2d game" />
+        </div>
+          <div class="col-md-6 custom-left-content align-items-center">
+            <img class = "imgmc" src = "mc.png" alt = "logo of marikithe.co online jewelry shop" />
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--tech stack -->
+    <section id="techstack" class="section techstack-section">
+      <div class="container">
+        <h2 class = "fade-bg">Tech Stack</h2>
+        <ul>
+          <li>
+            Programming Languages that I am familar of:
+          </li>
+        </ul>
+        <div class="row language-gallery">
+          <div class="col-md-6">
+            <img
+              src="java.png"
+              alt="Certificate for command line essenstials: git bash for windows"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              src="c.png"
+              alt="Certificate for The complete guide to HTML"
+            />
+          </div>
+          <div class="col-md-6">
+            <img src="css.webp" alt="Certificate for Intro to git" />
+          </div>
+          <div class="col-md-6">
+            <img src="html.png" alt="Certificate for Intro to git" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section quote-section">
+      <div class="container">
+        <h2 class = "fade-bg">Thank you</h2>
+        <p class = "italic">"If you try, you risk failure. If you don’t, you ensure it."</p>
+        <p> - Golden Flower</p>
+      </div>
+    </section>
+    
+
+    <!-- footer / contacts-->
+    <footer id = "contact">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4 class = "break">Contacts</h4>
+          <p class = "footeremail">Email Adress : lenardperegilx@gmail.com</p>
+          <p class = "footernumber">Phone Number : 09565078067</p> 
+        </div>
+      <div class="footer-bottom">
+        <div class="footer-name">© 2025 Peregil, Lenard G. All rights reserved</div>
+        <div class="icon-divider"></div>
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+          </div>
+        </div>  
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

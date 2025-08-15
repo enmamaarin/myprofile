@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Top Part-->
+    <div class="topPart">
+      <!-- <div class = "cat-track">
+        <img src = "bongo-cat-kitty.gif"></img>
+        <img src = "happy-taps.gif"></img>
+        <img src = "super-bongo.gif"></img>
+        <img src = "bongo-cat-kitty.gif"></img>
+        <img src = "happy-taps.gif"></img>
+        <img src = "super-bongo.gif"></img>
+        <img src = "bongo-cat-kitty.gif"></img>
+        <img src = "happy-taps.gif"></img>
+        <img src = "super-bongo.gif"></img>
+        </div> -->
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">MyPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificate">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#techstack">Tech Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About -->
+    <section id="top" class="hero-section container my-5 fade-up">
+      <div class="hero-content">
+        <div>
+          <h1 class="display-5 fw-bold text-white">Hello!</h1>
+          <h1 class="line"></h1>
+          <h2>About Me</h2>
+          <p>
+            Hello! My name is <strong>Lenard Peregil</strong>, but you can call
+            me Nard. I graduated from STI Pasay-EDSA and I’m currently a trainee
+            at SSCGI. My coding background might not be extensive yet, but I'm
+            confident in my ability to adapt and grow when guided. I'm looking
+            forward to learning, contributing, and growing alongside everyone.
+          </p>
+        </div>
+        <div>
+          <img
+            src="photo.png"
+            alt="Profile"
+            class="img-fluid rounded shadow grad-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section fade-up">
+      <div class="container container2">
+        <h2 class="backgroundeffect">Hobbies</h2>
+        <h3>Video Games</h3>
+        <h1 class="line2"></h1>
+        <div class="grid-gallery">
+          <div>
+            <img src="yunara.png" alt="Yunara" />
+            <a href="https://www.leagueoflegends.com/en-ph/" target="_blank">
+              <img class="logo" src="lol-logo.png" alt="LoL logo"
+            /></a>
+          </div>
+          <div>
+            <img id="valo-img" src="gogogo.jpg" alt="Valorant" />
+            <a href="https://playvalorant.com/en-us/" target="_blank">
+              <img class="logo" src="valorantlogo.png" alt="Valorant logo"
+            /></a>
+          </div>
+          <div>
+            <img src="warframe.jpg" alt="Warframe" />
+            <a href="https://www.warframe.com/" target="_blank">
+              <img class="logo" src="Warframe-logo.webp" alt="Warframe logo"
+            /></a>
+          </div>
+          <div>
+            <img id="apex-img" src="apex.jpg" alt="Apex" />
+            <a
+              href="https://www.ea.com/games/apex-legends/apex-legends"
+              target="_blank"
+            >
+              <img class="logo" src="apexlogo.svg" alt="Apex logo"
+            /></a>
+          </div>
+        </div>
+
+        <h3>Artworks</h3>
+        <h1 class="line2"></h1>
+        <div class="grid-artwork-gallery">
+          <img src="viper.jpg" alt="Viper" />
+          <img src="yoru.jpg" alt="Yoru" />
+          <img src="laplus.jpg" alt="Laplus" />
+          <img src="suzuka.jpg" alt="Suzuka" />
+          <img src="arsh.jpg" alt="Arsh" />
+          <img src="nez.jpg" alt="Nezuko" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificate" class="section fade-up">
+      <div class="container container2">
+        <h2 class="backgroundeffect">My Certificates</h2>
+        <ul>
+          <li>Completed courses on Udemy.</li>
+        </ul>
+        <div class="grid-gallery">
+          <img src="cmd.jpg" alt="Git Bash certificate" />
+          <img src="html.jpg" alt="HTML certificate" />
+          <img src="introtogit.jpg" alt="Git certificate" />
+          <img src="postman.jpg" alt="Postman certificate" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section fade-up">
+      <div class="container container2">
+        <h2 class="backgroundeffect">Projects</h2>
+        <ul>
+          <li>E-commerce web app for jewelry store.</li>
+          <li>2D mobile game about household chores.</li>
+        </ul>
+        <div class="grid-gallery">
+          <img src="bahay-bahayan.jpg" alt="Bahay Bahayan" />
+          <img src="mc.png" alt="Marikithe.co" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="techstack" class="section fade-up">
+      <div class="container container2">
+        <h2 class="backgroundeffect">Tech Stack</h2>
+        <div class="grid-icon-gallery">
+          <img src="java.png" alt="Java" />
+          <img src="c.png" alt="C" />
+          <img src="css.webp" alt="CSS" />
+          <img src="html.png" alt="HTML" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="section quote-section fade-up">
+      <div class="container container2">
+        <h2 class="backgroundeffect">Thank you</h2>
+        <p class="italic">
+          "If you try, you risk failure. If you don’t, you ensure it."
+        </p>
+        <p>- Golden Flower</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-container">
+        <div>
+          <h4>Contacts</h4>
+          <p>Email: lenardperegilx@gmail.com</p>
+          <p>Phone: 09234567890</p>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Peregil, Lenard G. All rights reserved</p>
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Navbar color change on scroll
+      window.addEventListener("scroll", function () {
+        document
+          .querySelector(".navbar")
+          .classList.toggle("scrolled", window.scrollY > 50);
+      });
+
+      // Fade-up animation on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document
+        .querySelectorAll(".fade-up")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
